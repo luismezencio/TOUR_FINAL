@@ -837,25 +837,25 @@ body.view-control-buttons .viewControlButton {
   display: none !important;
 }
 
-/* 2) Esconder tooltips criadas pelos hotspots (nomes que aparecem ao passar o mouse) */
-.hotspot-tooltip,
+/* 2) Esconder apenas os tooltips de LINK (nomes de panoramas nos botões de transição) */
 .link-hotspot-tooltip,
-.info-hotspot .info-hotspot-title-wrapper,
-.info-hotspot .info-hotspot-title,
-.info-hotspot .info-hotspot-title-wrapper:before {
+.hotspot-tooltip {
   display: none !important;
   visibility: hidden !important;
   pointer-events: none !important;
 }
 
-/* 3) Impedir qualquer pseudo-elemento ou texto flutuante (precaução) */
-a.scene .text,
+/* 3) Esconder lista de panoramas e botão de alternar lista */
 #sceneList, #sceneListToggle {
-  display: none !important; /* se você ainda quiser esconder a lista lateral definitivamente */
+  display: none !important;
 }
 
-/* 4) Se houver tooltip de fallback (IE) */
-.tooltip-fallback .link-hotspot-tooltip,
-.tooltip-fallback .info-hotspot .info-hotspot-title-wrapper {
-  display: none !important;
+/* 4) Manter os balões de informação visíveis normalmente */
+.info-hotspot,
+.info-hotspot .info-hotspot-header,
+.info-hotspot .info-hotspot-title-wrapper,
+.info-hotspot .info-hotspot-text {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
