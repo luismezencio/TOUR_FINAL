@@ -828,3 +828,32 @@ body.view-control-buttons .viewControlButton {
 .viewControlButton-6 {
   margin-left: 105px;
 }
+
+#titleBar,
+#titleBar .sceneName {
+  display: none !important;
+}
+
+/* Esconde tooltips dos links entre panoramas (nomes que aparecem ao passar o mouse) */
+.link-hotspot-tooltip,
+.hotspot-tooltip {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Esconde a lista lateral com os nomes dos panoramas */
+#sceneList,
+#sceneListToggle {
+  display: none !important;
+}
+
+/* Garante que os balões de informação continuem visíveis */
+.info-hotspot,
+.info-hotspot .info-hotspot-header,
+.info-hotspot .info-hotspot-title-wrapper,
+.info-hotspot .info-hotspot-text {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
