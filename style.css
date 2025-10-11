@@ -831,6 +831,3 @@ body.view-control-buttons .viewControlButton {
 #sceneList, #sceneListToggle {
   display: none !important;
 }
-#titleBar {
-  display: none !important;
-}
