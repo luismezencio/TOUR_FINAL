@@ -828,3 +828,6 @@ body.view-control-buttons .viewControlButton {
 .viewControlButton-6 {
   margin-left: 105px;
 }
+#sceneList, #sceneListToggle {
+  display: none !important;
+}
