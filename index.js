@@ -192,7 +192,7 @@
   }
 
   function updateSceneName(scene) {
-    //sceneNameElement.innerHTML = sanitize(scene.data.name);
+    sceneNameElement.innerHTML = sanitize(scene.data.name);
   }
 
   function updateSceneList(scene) {
