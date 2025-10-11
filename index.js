@@ -24,6 +24,10 @@
   // Grab elements from DOM.
   var panoElement = document.querySelector('#pano');
   var sceneNameElement = document.querySelector('#titleBar .sceneName');
+  if (sceneNameElement) {
+  sceneNameElement.style.display = 'none';
+  function updateSceneName(scene) { /* vazio para desativar */ }
+}
   var sceneListElement = document.querySelector('#sceneList');
   var sceneElements = document.querySelectorAll('#sceneList .scene');
   var sceneListToggleElement = document.querySelector('#sceneListToggle');
