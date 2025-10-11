@@ -30,6 +30,13 @@
   var autorotateToggleElement = document.querySelector('#autorotateToggle');
   var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
 
+  // Proteção: escondemos / desativamos o elemento de nome de cena para evitar que apareça.
+if (sceneNameElement) {
+  // garante que estilo esteja oculto (caso CSS não seja carregado ou haja conflito)
+  sceneNameElement.style.display = 'none';
+  // sobreescreve a função que atualiza o nome para evitar alterações futuras no DOM
+  function updateSceneName(scene) { /* intentionally empty */ }
+}
   // Detect desktop or mobile mode.
   if (window.matchMedia) {
     var setMode = function() {
