@@ -831,3 +831,31 @@ body.view-control-buttons .viewControlButton {
 #sceneList, #sceneListToggle {
   display: none !important;
 }
+/* 1) Esconder a barra de título inteira (nome do panorama no topo) */
+#titleBar,
+#titleBar .sceneName {
+  display: none !important;
+}
+
+/* 2) Esconder tooltips criadas pelos hotspots (nomes que aparecem ao passar o mouse) */
+.hotspot-tooltip,
+.link-hotspot-tooltip,
+.info-hotspot .info-hotspot-title-wrapper,
+.info-hotspot .info-hotspot-title,
+.info-hotspot .info-hotspot-title-wrapper:before {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* 3) Impedir qualquer pseudo-elemento ou texto flutuante (precaução) */
+a.scene .text,
+#sceneList, #sceneListToggle {
+  display: none !important; /* se você ainda quiser esconder a lista lateral definitivamente */
+}
+
+/* 4) Se houver tooltip de fallback (IE) */
+.tooltip-fallback .link-hotspot-tooltip,
+.tooltip-fallback .info-hotspot .info-hotspot-title-wrapper {
+  display: none !important;
+}
